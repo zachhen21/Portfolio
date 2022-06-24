@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Game Bank</string>
+    <string name="add_game">Add Game</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="title_text">Title</string>
+    <string name="price_text">Price</string>
+    <string name="console_text">Console</string>
+    <string name="date_purchased_text">Date Purchased</string>
+    <string name="condition_text">Condition</string>
+    <string name="game_library_text">Game Library</string>
+    <string name="menu_cancel_text">Cancel</string>
+    <string name="view_game_label">View Game</string>
+    <string name="game_title_hint">Game Title</string>
+    <string name="game_price_hint">Game Price</string>
+    <string name="date_purchased_hint">Date Purchased</string>
+    <string name="game_console_hint">Game Console</string>
+    <string name="game_condition_hint">Game Condition</string>
+    <string name="action_delete">Delete</string>
+    <string name="wishlist_text">Wishlist</string>
+</resources>

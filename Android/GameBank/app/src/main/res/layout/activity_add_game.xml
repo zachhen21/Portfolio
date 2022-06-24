@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGameActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/add_game_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Game"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textCapSentences|textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_game_text" />
+
+    <EditText
+        android:id="@+id/price_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="none|number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_edit_text" />
+
+    <TextView
+        android:id="@+id/title_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Game Title:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/title_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/title_edit_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Purchase Price:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/price_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/price_edit_text"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/console_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_edit_text" />
+
+    <TextView
+        android:id="@+id/console_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Game Console:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/console_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/console_edit_text"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/library_button"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="164dp"
+        android:text="Add to Game Bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_edit_text"
+        android:background="@color/grey"/>
+
+    <EditText
+        android:id="@+id/date_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/console_edit_text" />
+
+    <TextView
+        android:id="@+id/date_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Date Purchased:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/date_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/date_edit_text" />
+
+    <EditText
+        android:id="@+id/condition_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_edit_text" />
+
+    <TextView
+        android:id="@+id/condition_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Condition:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/condition_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/condition_edit_text" />
+
+    <Switch
+        android:id="@+id/switch_owned"
+        android:layout_width="206dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condition_edit_text" />
+
+    <TextView
+        android:id="@+id/owned_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Currently Owned:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_owned"
+        app:layout_constraintEnd_toStartOf="@+id/switch_owned" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

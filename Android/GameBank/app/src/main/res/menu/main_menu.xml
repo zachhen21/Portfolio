@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add_game"
+        android:orderInCategory="10"
+        android:title="@string/add_game"
+        android:icon="@drawable/ic_action_add"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_wishlist"
+        android:orderInCategory="20"
+        android:title="@string/wishlist"
+        android:icon="@drawable/ic_action_wishlist"
+        app:showAsAction="always"
+        />
+</menu>

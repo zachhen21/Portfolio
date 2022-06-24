@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ValheimWebsite.model;
+
+namespace ValheimWebsite
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Session["User"] != null)
+            {
+
+                User newUser = (User)Session["User"];
+                pnlUser.Visible = true;
+                pnlNoUser.Visible = false;
+
+                lblUserName.Text = newUser.Name;
+                
+                
+            }
+            else
+            {
+                pnlUser.Visible = false;
+                pnlNoUser.Visible = true;
+            }
+        }
+    }
+}

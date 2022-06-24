@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ValheimWebsite.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>Valheim Guide</title>
+    <link href="css/valheim.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Valheim Guide</h1>
+    </header>
+    <form id="form1" runat="server">    
+    
+    <nav>
+			<a href="Default.aspx">Home</a>
+			<a href="Meadows.aspx">Meadows</a>
+			<a href="BlackForest.aspx">Black Forest</a>
+			<a href="Swamp.aspx">Swamp</a>
+			<a href="Mountains.aspx">Mountains</a>
+			<a href="Plains.aspx">Plains</a>
+			<a href="Contact.aspx">Contact</a>
+			<a href="ItemDatabase.aspx">Item Database</a>
+            
+	</nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+    <footer>
+        <p><small>Copyright &copy; Valheim Guide 2021 - Zach Hendrickson</small></p>
+    </footer>
+</div>
+</body>
+
+</html>
